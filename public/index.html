@@ -1,65 +1,439 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.17.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.17.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.17.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Traffic Ticket</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/form-validation.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <i class="fas fa-exclamation-triangle fa-7x " style="color: #35332d ;"></i>
+      <p><br></p>
+      <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!--<div class="row">-->
+    <div class="container">
+      <form class="needs-validation">
+        <h4>เลขที่ใบสั่ง 6104101402</h4>
+        <div class="mb-3">
+          <label>ด้วยผู้ขับขี่</label>
+          <div class="row">
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถจักรยานยนต์ </div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถยนต์นั่งส่วนบุคคล</div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถประเภทอื่น</div>
+            <div class="col-md-3">
+              <input type="radio" name="drive" required /> รถขนส่ง</div>
+          </div>
+        </div>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cars">ยี่ห้อ</label>
+            <select name="cars" id="cars" class="form-control">
+              <option value="toyota">toyota</option>
+              <option value="honda">honda</option>
+              <option value="volvo">volvo</option>
+              <option value="saab">saab</option>
+              <option value="opel">opel</option>
+              <option value="audi">audi</option>
+            </select>
+            <div class="invalid-feedback">
+              กรุณาเลือกยี่ห้อรถ
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <input type="radio" name="country" required /> กรุงเทพมหานคร
+            <br>
+            <input type="radio" name="country" required /> จังหวัด
+            <input type="text" class="form-control" id="country" placeholder="Provice" >
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+
+        <h4>หมายเลขทะเบียนรถ</h4>
+        <div class="row">
+        <div class="col-md-3">
+        <input type="text" class="form-control" id="number" placeholder="License Plate no:กษ10xxx" required></div>
+      </div>
+        <div class="mb-3">
+          <label>ป้ายทะเบียนสี</label>
+          <div class="row">
+            <div class="col-md-2">
+              <input type="radio" name="coler" required /> ขาว</div>
+            <div class="col-md-2">
+              <input type="radio" name="coler" required /> เหลือง</div>
+            <div class="col-md-2">
+              <input type="radio" name="coler" required /> เขียว</div>
+            <div class="col-md-2">
+              <input type="radio" name="coler" required /> แดง</div>
+            <div class="col-md-2">
+              <input type="radio" name="coler" required /> ฟ้า</div>
+            <div class="col-md-2">
+              <input type="radio" name="coler" required /> อื่นๆ</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>กระทำผิดฐาน</label>
+          <div class="row-mb-5 md-2">
+            <label>๑ การขับรถ</label>
+            <div class="col-md-3">
+              <input type="radio" name="driving" /> ฝ่าฝืนไฟจราจรสีแดง</div>
+            <div class="col-md-3">
+              <input type="radio" name="driving" /> ฝ่าฝืนเครื่องหมายบนพื้นทาง</div>
+            <div class="col-md-3">
+              <input type="radio" name="driving" /> ฝ่าฝืนเครื่องหมายจราจรห้าม</div>
+          </div>
+          <div class="row-mb-5 md-2">
+            <div class="col-md-3">
+              <input type="radio" name="driving" /> ในลักษณะกีดขวางจราจร</div>
+            <div class="col-md-3">
+              <input type="radio" name="driving" /> ไม่ใกล้ขอบทางเดินรถด้านซ้าย</div>
+            <div class="col-md-3">
+              <input type="radio" name="driving" /> แซงเมื่อเข้าที่คับขัน</div>
+          </div>
+          <div class="row-mb-5 md-2">
+            <label>๒ หยุดรถ</label>
+            <div class="col-md-3">
+              <input type="radio" name="stop" /> ในลักษณะกีดขวางจราจร</div>
+            <div class="col-md-3">
+              <input type="radio" name="stop" /> ในเขตห้ามหยุด</div>
+            <div class="col-md-3">
+              <input type="radio" name="stop" /> รอสัญญาณล้ำแนว</div>
+          </div>
+          <div class="row-mb-5 md-2">
+            <label>๓ จอดรถไว้</label>
+            <div class="col-md-3">
+              <input type="radio" name="parking" /> ในลักษณะกีดขวางจราจร</div>
+            <div class="col-md-3">
+              <input type="radio" name="parking" /> บนทางเท้า</div>
+            <div class="col-md-3">
+              <input type="radio" name="parking" /> ในเขตห้ามจอด</div>
+          </div>
+          <div class="row-mb-5 md-2">
+            <div class="col-md-3">
+              <input type="radio" name="parking" /> ไม่ชิดขอบด้านซ้าย</div>
+            <div class="col-md-3">
+              <input type="radio" name="parking" /> ไม่ขนานชิดขอบทาง</div>
+            <div class="col-md-3">
+              <input type="radio" name="parking" /> ซ้อนคัน</div>
+          </div>
+          <div class="row-mb">
+            <label>๔ อื่นๆ </label>
+            <input type="text" name="rul" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="plance">เหตุเกิดที่..</label>
+            <input type="text" class="form-control" id="plance" placeholder="Plance of incident" required>
+            <div class="invalid-feedback">
+              สถานที่เกิดเหตุ
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ถนน</label>
+            <input type="text" class="form-control" id="plance" placeholder="Raod" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ตำบล/แขวง</label>
+            <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-number">อำเภอ</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="District" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <input type="radio" name="country" required /> กรุงเทพมหานคร
+            <br>
+            <div class="invalid-feedback">
+              กรอกจังหวัด
+            </div>
+            <div class="col-mb-2">
+              <input type="radio" name="country" required /> จังหวัด
+              <input type="text" class="form-control" id="country" placeholder="Province" required>
+              <div class="invalid-feedback">
+                กรอกจังหวัด
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-3">
+            <form action="/action_page.php">
+              <label for="เมื่อวันที่">เมื่อวันที่</label>
+              <input type="date" id="เมื่อวันที่" name="เมื่อวันที่">
+            </form>
+            <div class="invalid-feedback">
+              กรอกวันที่เกิดเหตุ
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <h6>
+          อาศัยอำนาจตามความในมาตรา ๑๓๐ วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๔๑๑ ซึ่งแก้ไขเพิ่มเติมโดย
+          พ.ร.บ.จราจรทางบก(ฉบับที่
+          ๙)พ.ศ.๒๔๔฿ และมาตรา ๑๔๑ แห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๔๒๒ ซึ่งแก้ไขเพิ่มเติมโดยฉบับที่๑๑ พ.ศ.๒๕๕๖
+          ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถ
+          ไปชำระค่าปรับตาม "ข้อกำหนดสำนักงานตำรวจแห่งชาติ"</h6>
+        <div class="row-md-10 mb-3">
+          <input type="radio" name="country" required />
+          ส่งทางไปรษณีย์พร้อมหลักฐานและให้เจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามที่ระบุไว้ภายในสามสิบวันนับแต่วันที่ได้รับใบสั่ง
+          <br>
+        </div>
+        <label>ผู้ออกใบสั่ง</label>
+        <div class="row">
+          <div class="col-md-2 mb-3">
+            <label for="police">ยศ</label>
+            <select name="police" id="police" class="form-control">
+              <option value="พลตำรวจเอก">พลตำรวจเอก</option>
+              <option value="พลตำรวจโท">พลตำรวจโท</option>
+              <option value="พลตำรวจตรี">พลตำรวตรี</option>
+              <option value="พันตำรวจเอก">พันตำรวจเอ</option>
+              <option value="พันตำรวจโท">พันตำรวจโท</option>
+              <option value="พันตำรวจตรี">พันตำรวตรี</option>
+              <option value="ร้อยตำรวจเอก">ร้อยตำรวจเอก</option>
+              <option value="ร้อยตำรวจโท">ร้อยตำรวจโท</option>
+              <option value="ร้อยตำรวจตรี">ร้อยตำรวจตรี</option>
+              <option value="ดาบตำรวจ">ดาบตำรวจ</option>
+              <option value="จ่าสิบตำรวจ">จ่าสิบตำรวจ</option>
+              <option value="สิบตำรวจเอก">สิบตำรวจเอก</option>
+              <option value="สิบตำรวจโท">สิบตำรวจโท</option>
+              <option value="สิบตำรวจตรี">สิบตำรวจตรี</option>
+            </select>
+            <div class="invalid-feedback">
+              กรุณาเลือกยี่ห้อรถ
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="name">ชื่อ</label>
+              <input type="text" class="form-control" id="name" placeholder="First Name" required>
+              <div class="invalid-feedback">
+                กรอกชื่อ
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="name">ชื่อสกุล</label>
+              <input type="text" class="form-control" id="name" placeholder="Last Name" required>
+              <div class="invalid-feedback">
+                กรอกสกุลชื่อ
+              </div>
+            </div>
+            <div class="row-md-3 mb-3">
+              <div class="col">
+                <div class="d-block my-">
+                  <input type="radio" name="officer" required />เจ้าพนักงานจราจร
+                  <div class="invalid-feedback">
+                    เลือกตำแหน่ง
+                  </div>
+                </div>
+                <input type="radio" name="officer" required />พนักงานเจ้าหน้าที่
+                <input type="number" class="form-control" id="code" placeholder="code" required>
+                <div class="invalid-feedback">
+                  เลือกตำแหน่ง
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <h4>ใบรับแทนใบอนุญาติขับขี่</h4>
+    <div class="row">
+      <div class="col-md-5 mb-3">
+        <label for="Driver">ชื่อผู้ขับขี่</label>
+        <input type="text" class="form-control" id="Driver" placeholder="Driver's Name" required>
+        <div class="invalid-feedback">
+          กรอกชื่อผู้ขับขี่
+        </div>
+      </div>
+      <div class="col-md-5 mb-3">
+        <label for="IDcard">เลขบัตรประจำตัวประชาชน</label>
+        <input type="number" class="form-control" id="IDcard" placeholder="ID No." required>
+        <div class="invalid-feedback">
+          กรอกเลขประชาชน
+        </div>
+      </div>
+      <div class="col-md-5 mb-3">
+        <label for="license No.">ใบอนุญาติขับขี่เลขที่</label>
+        <input type="number" class="form-control" id="license No." placeholder="License No." required>
+        <div class="invalid-feedback">
+          กรอกเลขที่ใบอนุญาติ
+        </div>
+      </div>
+      <div class="col-md-2 mb-3">
+        <form action="/action_page.php">
+          <label for="daycon">วันอนุญาติ</label>
+          <input type="date" id="daycon" name="daycon" placeholder="Date of issue" >
+        </form>
+        <div class="invalid-feedback">
+          วันอนุญาติ
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <input type="radio" name="country" required /> กรุงเทพมหานคร
+      <input type="text" class="form-control" id="country" placeholder="สาขา(Branch)">
+      <div class="invalid-feedback">
+        กรอกจังหวัด สาขา
+      </div>
+      <input type="radio" name="country" required /> จังหวัด
+      <input type="text" class="form-control" id="country" placeholder="สาขา(Branch)">
+      <div class="invalid-feedback">
+        กรอกจังหวัด สาขา
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label>ใบขับขขี่</label>
+      <div class="col">
+        <div class="col-md-9">
+          <input type="radio" name="driverslicense" required /> รถจักรยานยนต์</div>
+        <div class="col-md-9">
+          <input type="radio" name="driverslicense" required /> รถสามล้อ</div>
+        <div class="col-md-9">
+          <input type="radio" name="driverslicense" required /> รถยนต์</div>
+        <div class="col-md-9">
+          <input type="radio" name="driverslicense" required /> รถขนส่ง</div>
+        <div class="col-md-9">
+          <input type="radio" name="driverslicense" required /> รถอื่นๆ</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label>ชนิด</label>
+      <div class="col">
+        <div class="col-md-9">
+          <input type="radio" name="typecars" required /> ชั่วคราว</div>
+        <div class="col-md-9">
+          <input type="radio" name="typecars" required /> ตลอดชีพ</div>
+        <div class="col-md-9">
+          <input type="radio" name="typecars" required /> สาธารณะ</div>
+        <div class="col-md-9">
+          <input type="radio" name="typecars" required /> บุคคลชนิดที่</div>
+        <div class="col-md-9">
+          <input type="radio" name="typecars" required /> ทุกประเภท ชนิดที่</div>
+        <div class="col-md-9">
+          <input type="radio" name="typecars" required /> ระหว่างประเทศ</div>
+      </div>
+    </div>
+
+    <h6>ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบอนุญาติขับขี่ไว้ และให้ใช้เป็นใบแทนใบอนุญาติขับขี่ได้ชั่วคราว ไม่เกิน ๗
+      วัน นับแต่วันที่ออกใบรับแทนใบอนุญาติขับขี่นี้</h6>
+
+    <label>ผู้ออกใบสั่ง</label>
+    <div class="row">
+      <div class="col-md-2 mb-3">
+        <label for="police">ยศ</label>
+        <select name="police" id="police" class="form-control">
+          <option value="พลตำรวจเอก">พลตำรวจเอก</option>
+          <option value="พลตำรวจโท">พลตำรวจโท</option>
+          <option value="พลตำรวจตรี">พลตำรวตรี</option>
+          <option value="พันตำรวจเอก">พันตำรวจเอ</option>
+          <option value="พันตำรวจโท">พันตำรวจโท</option>
+          <option value="พันตำรวจตรี">พันตำรวตรี</option>
+          <option value="ร้อยตำรวจเอก">ร้อยตำรวจเอก</option>
+          <option value="ร้อยตำรวจโท">ร้อยตำรวจโท</option>
+          <option value="ร้อยตำรวจตรี">ร้อยตำรวจตรี</option>
+          <option value="ดาบตำรวจ">ดาบตำรวจ</option>
+          <option value="จ่าสิบตำรวจ">จ่าสิบตำรวจ</option>
+          <option value="สิบตำรวจเอก">สิบตำรวจเอก</option>
+          <option value="สิบตำรวจโท">สิบตำรวจโท</option>
+          <option value="สิบตำรวจตรี">สิบตำรวจตรี</option>
+        </select>
+        <div class="invalid-feedback">
+          กรุณาเลือกยี่ห้อรถ
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label for="name">ชื่อ</label>
+          <input type="text" class="form-control" id="name" placeholder="First Name" required>
+          <div class="invalid-feedback">
+            กรอกชื่อ
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="name">ชื่อสกุล</label>
+          <input type="text" class="form-control" id="name" placeholder="Last Name" required>
+          <div class="invalid-feedback">
+            กรอกสกุลชื่อ
+          </div>
+        </div>
+        <div class="row-md-3 mb-3">
+          <div class="col">
+            <label>รหัส</label><br>
+            <input type="number" class="form-control" id="code" placeholder="Code" required>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <hr class="mb-4">
+  <button class="btn btn-primary btn-lg btn-block" type="submit">บันทึกข้อมูล</button>
+  </form>
+
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; Traffic Ticket issude by Traffic Officers</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Officer</a></li>
+      <li class="list-inline-item"><a href="#">Competent</a></li>
+      <li class="list-inline-item"><a href="#">Traffic</a></li>
+    </ul>
+  </footer>
+  </div>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
