@@ -79,7 +79,7 @@
 
         <h4>หมายเลขทะเบียนรถ</h4>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-m">
             <input type="text" class="form-control" id="number" placeholder="License Plate no:กษ10xxx" required></div>
         </div>
         <div class="mb-3">
@@ -145,80 +145,245 @@
             <div class="col-md-3">
               <input type="radio" name="parking" /> ซ้อนคัน</div>
           </div>
-          <div class="row-mb">
+          <div class="row-mb-5 md-2">
             <label>๔ อื่นๆ </label>
-            <input type="text" name="rul" />
+            <div class="col-md-3">
+              <input type="text" class="form-control" name="other" placeholder="Other" required />
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="plance">เหตุเกิดที่..</label>
-            <input type="text" class="form-control" id="plance" placeholder="Plance of incident" required>
-            <div class="invalid-feedback">
-              สถานที่เกิดเหตุ
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="plance">เหตุเกิดที่..</label>
+              <input type="text" class="form-control" id="plance" placeholder="Plance of incident" required>
+              <div class="invalid-feedback">
+                สถานที่เกิดเหตุ
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="plance">ถนน</label>
+              <input type="text" class="form-control" id="plance" placeholder="Raod" required>
+              <div class="invalid-feedback">
+                กรอกที่อยู่
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="plance">ตำบล/แขวง</label>
+              <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
+              <div class="invalid-feedback">
+                กรอกที่อยู่
+              </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <label for="plance">ถนน</label>
-            <input type="text" class="form-control" id="plance" placeholder="Raod" required>
-            <div class="invalid-feedback">
-              กรอกที่อยู่
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-number">อำเภอ</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="District" required>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="plance">ตำบล/แขวง</label>
-            <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
-            <div class="invalid-feedback">
-              กรอกที่อยู่
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="cc-number">อำเภอ</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="District" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <input type="radio" name="country" required /> กรุงเทพมหานคร
-            <br>
-            <div class="invalid-feedback">
-              กรอกจังหวัด
-            </div>
-            <div class="col-mb-2">
-              <input type="radio" name="country" required /> จังหวัด
-              <input type="text" class="form-control" id="country" placeholder="Province" required>
+            <div class="col-md-3 mb-3">
+              <input type="radio" name="country" required /> กรุงเทพมหานคร
+              <br>
               <div class="invalid-feedback">
                 กรอกจังหวัด
+              </div>
+              <div class="col-mb-2">
+                <input type="radio" name="country" required /> จังหวัด
+                <input type="text" class="form-control" id="country" placeholder="Province" required>
+                <div class="invalid-feedback">
+                  กรอกจังหวัด
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <label for="Date">วันเกิดเหตุ</label>
+              <input type="date" class="form-control" id="Date" placeholder="Date " required>
+              <div class="invalid-feedback">
+                วันเกิดเหตุ
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <label for="Date time">เวลาเกิดเหตุ</label>
+              <input type="time" class="form-control" id="Date time" placeholder="Date time " required>
+              <div class="invalid-feedback">
+                วันเกิดเหตุ
               </div>
             </div>
           </div>
 
-          <div class="col-md-2 mb-3">
-            <form action="/action_page.php">
-              <label for="เมื่อวันที่">เมื่อวันที่</label>
-              <input type="date" id="เมื่อวันที่" name="เมื่อวันที่">
-            </form>
-            <div class="invalid-feedback">
-              กรอกวันที่เกิดเหตุ
+
+
+
+          <h6>
+            อาศัยอำนาจตามความในมาตรา ๑๓๐ วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๔๑๑ ซึ่งแก้ไขเพิ่มเติมโดย
+            พ.ร.บ.จราจรทางบก(ฉบับที่
+            ๙)พ.ศ.๒๔๔฿ และมาตรา ๑๔๑ แห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๔๒๒ ซึ่งแก้ไขเพิ่มเติมโดยฉบับที่๑๑ พ.ศ.๒๕๕๖
+            ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถ
+            ไปชำระค่าปรับตาม "ข้อกำหนดสำนักงานตำรวจแห่งชาติ"</h6>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="pay"> จำนวนเงิน</label>
+              <input type="number" class="form-control" id="pay" placeholder="Pay the amount" required>
+              <div class="invalid-feedback">
+                จำนวนเงิน
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="Police station">ณ สถานีตำรวจ</label>
+              <input type="text" class="form-control" id="Police station" placeholder="Police Station " required>
+              <div class="invalid-feedback">
+                ณ สถานีตำรวจ
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="row-md-10 mb-3">
+            <input type="radio" name="country" required />
+            ส่งทางไปรษณีย์พร้อมหลักฐานและให้เจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามที่ระบุไว้ภายในสามสิบวันนับแต่วันที่ได้รับใบสั่ง
+            <br>
+          </div>
+          <label>ผู้ออกใบสั่ง</label>
+          <div class="row">
+            <div class="col-md-2 mb-3">
+              <label for="police">ยศ</label>
+              <select name="police" id="police" class="form-control">
+                <option value="พลตำรวจเอก">พลตำรวจเอก</option>
+                <option value="พลตำรวจโท">พลตำรวจโท</option>
+                <option value="พลตำรวจตรี">พลตำรวตรี</option>
+                <option value="พันตำรวจเอก">พันตำรวจเอ</option>
+                <option value="พันตำรวจโท">พันตำรวจโท</option>
+                <option value="พันตำรวจตรี">พันตำรวตรี</option>
+                <option value="ร้อยตำรวจเอก">ร้อยตำรวจเอก</option>
+                <option value="ร้อยตำรวจโท">ร้อยตำรวจโท</option>
+                <option value="ร้อยตำรวจตรี">ร้อยตำรวจตรี</option>
+                <option value="ดาบตำรวจ">ดาบตำรวจ</option>
+                <option value="จ่าสิบตำรวจ">จ่าสิบตำรวจ</option>
+                <option value="สิบตำรวจเอก">สิบตำรวจเอก</option>
+                <option value="สิบตำรวจโท">สิบตำรวจโท</option>
+                <option value="สิบตำรวจตรี">สิบตำรวจตรี</option>
+              </select>
+              <div class="invalid-feedback">
+                กรุณาเลือกยี่ห้อรถ
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="name">ชื่อ</label>
+                <input type="text" class="form-control" id="name" placeholder="First Name" required>
+                <div class="invalid-feedback">
+                  กรอกชื่อ
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="name">ชื่อสกุล</label>
+                <input type="text" class="form-control" id="name" placeholder="Last Name" required>
+                <div class="invalid-feedback">
+                  กรอกสกุลชื่อ
+                </div>
+              </div>
+              <div class="row-md-3 mb-3">
+                <div class="col">
+                  <div class="d-block my-">
+                    <input type="radio" name="officer" required />เจ้าพนักงานจราจร
+                    <div class="invalid-feedback">
+                      เลือกตำแหน่ง
+                    </div>
+                  </div>
+                  <input type="radio" name="officer" required />พนักงานเจ้าหน้าที่
+                  <input type="number" class="form-control" id="code" placeholder="code" required>
+                  <div class="invalid-feedback">
+                    เลือกตำแหน่ง
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-
-
-
-        <h6>
-          อาศัยอำนาจตามความในมาตรา ๑๓๐ วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๔๑๑ ซึ่งแก้ไขเพิ่มเติมโดย
-          พ.ร.บ.จราจรทางบก(ฉบับที่
-          ๙)พ.ศ.๒๔๔฿ และมาตรา ๑๔๑ แห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๔๒๒ ซึ่งแก้ไขเพิ่มเติมโดยฉบับที่๑๑ พ.ศ.๒๕๕๖
-          ให้ผู้ขับขี่หรือเจ้าของรถหรือผู้ครอบครองรถ
-          ไปชำระค่าปรับตาม "ข้อกำหนดสำนักงานตำรวจแห่งชาติ"</h6>
-        <div class="row-md-10 mb-3">
-          <input type="radio" name="country" required />
-          ส่งทางไปรษณีย์พร้อมหลักฐานและให้เจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามที่ระบุไว้ภายในสามสิบวันนับแต่วันที่ได้รับใบสั่ง
-          <br>
+        <hr>
+        <h4>ใบรับแทนใบอนุญาติขับขี่</h4>
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="Driver">ชื่อผู้ขับขี่</label>
+            <input type="text" class="form-control" id="Driver" placeholder="Driver's Name" required>
+            <div class="invalid-feedback">
+              กรอกชื่อผู้ขับขี่
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="IDcard">เลขบัตรประจำตัวประชาชน</label>
+            <input type="number" class="form-control" id="IDcard" placeholder="ID No." required>
+            <div class="invalid-feedback">
+              กรอกเลขประชาชน
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="license No.">ใบอนุญาติขับขี่เลขที่</label>
+            <input type="number" class="form-control" id="license No." placeholder="License No." required>
+            <div class="invalid-feedback">
+              กรอกเลขที่ใบอนุญาติ
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="Date">วันอนุญาต</label>
+            <input type="date" class="form-control" id="Date" placeholder="Date " required>
+            <div class="invalid-feedback">
+              วันอนุญาต
+            </div>
+          </div>
         </div>
+        <div class="col-md-6 mb-3">
+          <input type="radio" name="country" required /> กรุงเทพมหานคร
+          <input type="text" class="form-control" id="country" placeholder="สาขา(Branch)">
+          <div class="invalid-feedback">
+            กรอกจังหวัด สาขา
+          </div>
+          <input type="radio" name="country" required /> จังหวัด
+          <input type="text" class="form-control" id="country" placeholder="สาขา(Branch)">
+          <div class="invalid-feedback">
+            กรอกจังหวัด สาขา
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label>ใบขับขขี่</label>
+          <div class="col">
+            <div class="col-md-9">
+              <input type="radio" name="driverslicense" required /> รถจักรยานยนต์</div>
+            <div class="col-md-9">
+              <input type="radio" name="driverslicense" required /> รถสามล้อ</div>
+            <div class="col-md-9">
+              <input type="radio" name="driverslicense" required /> รถยนต์</div>
+            <div class="col-md-9">
+              <input type="radio" name="driverslicense" required /> รถขนส่ง</div>
+            <div class="col-md-9">
+              <input type="radio" name="driverslicense" required /> รถอื่นๆ</div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label>ชนิด</label>
+          <div class="col">
+            <div class="col-md-9">
+              <input type="radio" name="typecars" required /> ชั่วคราว</div>
+            <div class="col-md-9">
+              <input type="radio" name="typecars" required /> ตลอดชีพ</div>
+            <div class="col-md-9">
+              <input type="radio" name="typecars" required /> สาธารณะ</div>
+            <div class="col-md-9">
+              <input type="radio" name="typecars" required /> บุคคลชนิดที่</div>
+            <div class="col-md-9">
+              <input type="radio" name="typecars" required /> ทุกประเภท ชนิดที่</div>
+            <div class="col-md-9">
+              <input type="radio" name="typecars" required /> ระหว่างประเทศ</div>
+          </div>
+        </div>
+
+        <h6>ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบอนุญาติขับขี่ไว้ และให้ใช้เป็นใบแทนใบอนุญาติขับขี่ได้ชั่วคราว
+          ไม่เกิน ๗
+          วัน นับแต่วันที่ออกใบรับแทนใบอนุญาติขับขี่นี้</h6>
+
         <label>ผู้ออกใบสั่ง</label>
         <div class="row">
           <div class="col-md-2 mb-3">
@@ -244,14 +409,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3 mb-3">
+            <div class="col-md-4 mb-3">
               <label for="name">ชื่อ</label>
               <input type="text" class="form-control" id="name" placeholder="First Name" required>
               <div class="invalid-feedback">
                 กรอกชื่อ
               </div>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-4 mb-3">
               <label for="name">ชื่อสกุล</label>
               <input type="text" class="form-control" id="name" placeholder="Last Name" required>
               <div class="invalid-feedback">
@@ -260,426 +425,342 @@
             </div>
             <div class="row-md-3 mb-3">
               <div class="col">
-                <div class="d-block my-">
-                  <input type="radio" name="officer" required />เจ้าพนักงานจราจร
-                  <div class="invalid-feedback">
-                    เลือกตำแหน่ง
-                  </div>
-                </div>
-                <input type="radio" name="officer" required />พนักงานเจ้าหน้าที่
-                <input type="number" class="form-control" id="code" placeholder="code" required>
-                <div class="invalid-feedback">
-                  เลือกตำแหน่ง
-                </div>
+                <label>รหัส</label><br>
+                <input type="number" class="form-control" id="code" placeholder="Code" required>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    <hr>
-    <h4>ใบรับแทนใบอนุญาติขับขี่</h4>
-    <div class="row">
-      <div class="col-md-5 mb-3">
-        <label for="Driver">ชื่อผู้ขับขี่</label>
-        <input type="text" class="form-control" id="Driver" placeholder="Driver's Name" required>
-        <div class="invalid-feedback">
-          กรอกชื่อผู้ขับขี่
+
+        <hr>
+        <div class="py-5 text-center">
+          <i class="fas fa-exclamation-triangle fa-7x " style="color: #35332d ;"></i>
+          <p><br></p>
+          <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
         </div>
-      </div>
-      <div class="col-md-5 mb-3">
-        <label for="IDcard">เลขบัตรประจำตัวประชาชน</label>
-        <input type="number" class="form-control" id="IDcard" placeholder="ID No." required>
-        <div class="invalid-feedback">
-          กรอกเลขประชาชน
+        <div class="row">
+          <div class="col-md-9 mb-3">
+            <label for="name">ชื่อผู้ขับขี่/เจ้าของหรือผู้ครอบครอง</label>
+            <input type="text" class="form-control" id="name"
+              placeholder="Driver's name,conveyaneance owner or prossessor's Name" required>
+            <div class="invalid-feedback">
+              กรอกชื่อเจ้าของรถ
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-5 mb-3">
-        <label for="license No.">ใบอนุญาติขับขี่เลขที่</label>
-        <input type="number" class="form-control" id="license No." placeholder="License No." required>
-        <div class="invalid-feedback">
-          กรอกเลขที่ใบอนุญาติ
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="plance">ที่อยู่</label>
+            <input type="text" class="form-control" id="plance" placeholder="Address" required>
+            <div class="invalid-feedback">
+              ที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ถนน</label>
+            <input type="text" class="form-control" id="plance" placeholder="Raod" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ซอย</label>
+            <input type="text" class="form-control" id="plance" placeholder="Alley" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-2 mb-3">
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="plance">ตำบล/แขวง</label>
+            <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">อำเภอ</label>
+            <input type="text" class="form-control" id="plance" placeholder="District" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">จังหวัด</label>
+            <input type="text" class="form-control" id="plance" placeholder="Province" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h5>ข้อหา</h5>
         <form action="/action_page.php">
-          <label for="daycon">วันอนุญาติ</label>
-          <input type="date" id="daycon" name="daycon" placeholder="Date of issue">
+          <textarea type="text" name="message" rows="10" cols="100" placeholder="Charnge" required></textarea>
+
         </form>
-        <div class="invalid-feedback">
-          วันอนุญาติ
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 mb-3">
-      <input type="radio" name="country" required /> กรุงเทพมหานคร
-      <input type="text" class="form-control" id="country" placeholder="สาขา(Branch)">
-      <div class="invalid-feedback">
-        กรอกจังหวัด สาขา
-      </div>
-      <input type="radio" name="country" required /> จังหวัด
-      <input type="text" class="form-control" id="country" placeholder="สาขา(Branch)">
-      <div class="invalid-feedback">
-        กรอกจังหวัด สาขา
-      </div>
-    </div>
 
-    <div class="mb-3">
-      <label>ใบขับขขี่</label>
-      <div class="col">
-        <div class="col-md-9">
-          <input type="radio" name="driverslicense" required /> รถจักรยานยนต์</div>
-        <div class="col-md-9">
-          <input type="radio" name="driverslicense" required /> รถสามล้อ</div>
-        <div class="col-md-9">
-          <input type="radio" name="driverslicense" required /> รถยนต์</div>
-        <div class="col-md-9">
-          <input type="radio" name="driverslicense" required /> รถขนส่ง</div>
-        <div class="col-md-9">
-          <input type="radio" name="driverslicense" required /> รถอื่นๆ</div>
-      </div>
-    </div>
-    <div class="mb-3">
-      <label>ชนิด</label>
-      <div class="col">
-        <div class="col-md-9">
-          <input type="radio" name="typecars" required /> ชั่วคราว</div>
-        <div class="col-md-9">
-          <input type="radio" name="typecars" required /> ตลอดชีพ</div>
-        <div class="col-md-9">
-          <input type="radio" name="typecars" required /> สาธารณะ</div>
-        <div class="col-md-9">
-          <input type="radio" name="typecars" required /> บุคคลชนิดที่</div>
-        <div class="col-md-9">
-          <input type="radio" name="typecars" required /> ทุกประเภท ชนิดที่</div>
-        <div class="col-md-9">
-          <input type="radio" name="typecars" required /> ระหว่างประเทศ</div>
-      </div>
-    </div>
-
-    <h6>ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบอนุญาติขับขี่ไว้ และให้ใช้เป็นใบแทนใบอนุญาติขับขี่ได้ชั่วคราว ไม่เกิน ๗
-      วัน นับแต่วันที่ออกใบรับแทนใบอนุญาติขับขี่นี้</h6>
-
-    <label>ผู้ออกใบสั่ง</label>
-    <div class="row">
-      <div class="col-md-2 mb-3">
-        <label for="police">ยศ</label>
-        <select name="police" id="police" class="form-control">
-          <option value="พลตำรวจเอก">พลตำรวจเอก</option>
-          <option value="พลตำรวจโท">พลตำรวจโท</option>
-          <option value="พลตำรวจตรี">พลตำรวตรี</option>
-          <option value="พันตำรวจเอก">พันตำรวจเอ</option>
-          <option value="พันตำรวจโท">พันตำรวจโท</option>
-          <option value="พันตำรวจตรี">พันตำรวตรี</option>
-          <option value="ร้อยตำรวจเอก">ร้อยตำรวจเอก</option>
-          <option value="ร้อยตำรวจโท">ร้อยตำรวจโท</option>
-          <option value="ร้อยตำรวจตรี">ร้อยตำรวจตรี</option>
-          <option value="ดาบตำรวจ">ดาบตำรวจ</option>
-          <option value="จ่าสิบตำรวจ">จ่าสิบตำรวจ</option>
-          <option value="สิบตำรวจเอก">สิบตำรวจเอก</option>
-          <option value="สิบตำรวจโท">สิบตำรวจโท</option>
-          <option value="สิบตำรวจตรี">สิบตำรวจตรี</option>
-        </select>
-        <div class="invalid-feedback">
-          กรุณาเลือกยี่ห้อรถ
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <label for="name">ชื่อ</label>
-          <input type="text" class="form-control" id="name" placeholder="First Name" required>
-          <div class="invalid-feedback">
-            กรอกชื่อ
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="speed limit">ความเร็วที่กฏหมายกำหนด กม./ชม.</label>
+            <input type="number" class="form-control" id="speed limit" placeholder="Speed limit enforcement" required>
+            <div class="invalid-feedback">
+              กรอกความเร็วที่กฏหมายกำหนด
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="speed limit">ความเร็วที่ตรวจจับ กม./ชม.</label>
+            <input type="number" class="form-control" id="speed limit" placeholder="Vehicle speed detection" required>
+            <div class="invalid-feedback">
+              กรอกความเร็วที่กฏหมายกำหนด
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <label for="name">ชื่อสกุล</label>
-          <input type="text" class="form-control" id="name" placeholder="Last Name" required>
-          <div class="invalid-feedback">
-            กรอกสกุลชื่อ
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="vehicle"> ช่องทางเดินรถที่</label>
+            <input type="number" class="form-control" id="vehicle" placeholder="Vehicle lane" required>
+            <div class="invalid-feedback">
+              กรอกช่องทางเดินรถ
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="vehicle">หมายเลขทะเบียนรถ</label>
+            <input type="number" class="form-control" id="vehicle" placeholder="Vehicle registration no." required>
+            <div class="invalid-feedback">
+              กรอกหมายเลยทะเบียนรถ
+            </div>
           </div>
         </div>
-        <div class="row-md-3 mb-3">
-          <div class="col">
-            <label>รหัส</label><br>
-            <input type="number" class="form-control" id="code" placeholder="Code" required>
+        <hr>
+        <h5>ผู้ออกใบสั่ง</h5>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="Name"> ชื่อ</label>
+            <input type="text" class="form-control" id="Name" placeholder="Name : " required>
+            <div class="invalid-feedback">
+              ชื่อผู้ออกใบสั่ง
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="Code">รหัส</label>
+            <input type="number" class="form-control" id="Code" placeholder="Code :" required>
+            <div class="invalid-feedback">
+              รหัสผู้ออกใบสั่ง
+            </div>
           </div>
         </div>
-      </div>
+
+        <hr>
+        <h6>หน่วยงานผู้ออกใบสั่ง</h6>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="plance">ที่อยู่</label>
+            <input type="text" class="form-control" id="plance" placeholder="Address" required>
+            <div class="invalid-feedback">
+              ที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ถนน</label>
+            <input type="text" class="form-control" id="plance" placeholder="Raod" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ตำบล/แขวง</label>
+            <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="plance">อำเภอ</label>
+            <input type="text" class="form-control" id="plance" placeholder="District" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">จังหวัด</label>
+            <input type="text" class="form-control" id="plance" placeholder="Province" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">โทร.</label>
+            <input type="number" class="form-control" id="plance" placeholder="Tel." required>
+            <div class="invalid-feedback">
+              กรอกเบอร์โทร
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-9 mb-3">
+            <label for="name">ชื่อผู้รับ</label>
+            <input type="text" class="form-control" id="name" placeholder="ชื่อผู้รับ" required>
+            <div class="invalid-feedback">
+              กรอกชื่อผู้รับ
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="plance">ที่อยู่</label>
+            <input type="text" class="form-control" id="plance" placeholder="Address" required>
+            <div class="invalid-feedback">
+              ที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ถนน</label>
+            <input type="text" class="form-control" id="plance" placeholder="Raod" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">ซอย</label>
+            <input type="text" class="form-control" id="plance" placeholder="Alley" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="plance">ตำบล/แขวง</label>
+            <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">อำเภอ</label>
+            <input type="text" class="form-control" id="plance" placeholder="District" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="plance">จังหวัด</label>
+            <input type="text" class="form-control" id="plance" placeholder="Province" required>
+            <div class="invalid-feedback">
+              กรอกที่อยู่
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="traffic ticket no."> เลขที่ใบสั่ง</label>
+            <input type="number" class="form-control" id="traffic ticket no." placeholder="Traffic ticket no." required>
+            <div class="invalid-feedback">
+              เลขที่ใบสั่ง
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="Date">วันกระทำความผิด</label>
+            <input type="date" class="form-control" id="Date" placeholder="Date of committing:" required>
+            <div class="invalid-feedback">
+              วันกระทำความผิด
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="Amount of fine"> จำนวนค่าปรับ</label>
+            <input type="number" class="form-control" id="Amount of fine" placeholder="Amount of fine" required>
+            <div class="invalid-feedback">
+              จำนวนค่าปรับ
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="Due Date">วันครบกำหนดชำระ</label>
+            <input type="date" class="form-control" id="Due Date" placeholder="Due Date " required>
+            <div class="invalid-feedback">
+              วันครบกำหนดชำระ
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="Former points"> คะแนนที่ถูกบันทึกเดิม</label>
+            <input type="number" class="form-control" id="Former points" placeholder="Former points" required>
+            <div class="invalid-feedback">
+              คะแนนที่ถูกบันทึกเดิม
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="Current points">คะแนนที่ถูกบันทึกครั้งนี้</label>
+            <input type="number" class="form-control" id="Current points" placeholder="Current points " required>
+            <div class="invalid-feedback">
+              คะแนนที่ถูกบันทึกครั้งนี้
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="Total points"> คะแนนที่ถูกบันทึกรวม</label>
+            <input type="number" class="form-control" id="Total points" placeholder="Total points" required>
+            <div class="invalid-feedback">
+              คะแนนที่ถูกบันทึกรวม
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="Status">สถานะใบอนุญาตขับขี่</label>
+            <input type="text" class="form-control" id="Status" placeholder="Status of driver's License:" required>
+            <div class="invalid-feedback">
+              สถานะใบอนุญาตขับขี่
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="input-group  mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
     </div>
 
-    <hr>
-    <div class="py-5 text-center">
-      <i class="fas fa-exclamation-triangle fa-7x " style="color: #35332d ;"></i>
-      <p><br></p>
-      <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-9 mb-3">
-        <label for="name">ชื่อผู้ขับขี่/เจ้าของหรือผู้ครอบครอง</label>
-        <input type="text" class="form-control" id="name"
-          placeholder="Driver's name,conveyaneance owner or prossessor's Name" required>
-        <div class="invalid-feedback">
-          กรอกชื่อเจ้าของรถ
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 mb-3">
-        <label for="plance">ที่อยู่</label>
-        <input type="text" class="form-control" id="plance" placeholder="Address" required>
-        <div class="invalid-feedback">
-          ที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">ถนน</label>
-        <input type="text" class="form-control" id="plance" placeholder="Raod" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">ซอย</label>
-        <input type="text" class="form-control" id="plance" placeholder="Alley" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 mb-3">
-        <label for="plance">ตำบล/แขวง</label>
-        <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">อำเภอ</label>
-        <input type="text" class="form-control" id="plance" placeholder="District" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">จังหวัด</label>
-        <input type="text" class="form-control" id="plance" placeholder="Province" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-    </div>
 
-    <hr>
-    <h5>ข้อหา</h5>
-    <form action="/action_page.php">
-      <textarea type="text" name="message" rows="10" cols="100" placeholder="Charnge" required></textarea>
 
+
+
+
+
+    <hr class="mb-4">
+    <button class="btn btn-primary btn-lg btn-block" type="submit">บันทึกข้อมูล</button>
     </form>
 
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <label for="speed limit">ความเร็วที่กฏหมายกำหนด กม./ชม.</label>
-        <input type="number" class="form-control" id="speed limit" placeholder="Speed limit enforcement" required>
-        <div class="invalid-feedback">
-          กรอกความเร็วที่กฏหมายกำหนด
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="speed limit">ความเร็วที่ตรวจจับ กม./ชม.</label>
-        <input type="number" class="form-control" id="speed limit" placeholder="Vehicle speed detection" required>
-        <div class="invalid-feedback">
-          กรอกความเร็วที่กฏหมายกำหนด
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <label for="vehicle"> ช่องทางเดินรถที่</label>
-        <input type="number" class="form-control" id="vehicle" placeholder="Vehicle lane" required>
-        <div class="invalid-feedback">
-          กรอกช่องทางเดินรถ
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="vehicle">หมายเลขทะเบียนรถ</label>
-        <input type="number" class="form-control" id="vehicle" placeholder="Vehicle registration no." required>
-        <div class="invalid-feedback">
-          กรอกหมายเลยทะเบียนรถ
-        </div>
-      </div>
-    </div>
-    <hr>
-    <h5>ผู้ออกใบสั่ง</h5>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <label for="Name"> ชื่อ</label>
-        <input type="text" class="form-control" id="Name" placeholder="Name : " required>
-        <div class="invalid-feedback">
-          ชื่อผู้ออกใบสั่ง
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <label for="Code">รหัส</label>
-        <input type="number" class="form-control" id="Code" placeholder="Code :" required>
-        <div class="invalid-feedback">
-          รหัสผู้ออกใบสั่ง
-        </div>
-      </div>
-    </div>
 
-    <hr>
-    <h6>หน่วยงานผู้ออกใบสั่ง</h6>
-    <div class="row">
-      <div class="col-md-3 mb-3">
-        <label for="plance">ที่อยู่</label>
-        <input type="text" class="form-control" id="plance" placeholder="Address" required>
-        <div class="invalid-feedback">
-          ที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">ถนน</label>
-        <input type="text" class="form-control" id="plance" placeholder="Raod" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">ตำบล/แขวง</label>
-        <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 mb-3">
-        <label for="plance">อำเภอ</label>
-        <input type="text" class="form-control" id="plance" placeholder="District" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">จังหวัด</label>
-        <input type="text" class="form-control" id="plance" placeholder="Province" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">โทร.</label>
-        <input type="number" class="form-control" id="plance" placeholder="Tel." required>
-        <div class="invalid-feedback">
-          กรอกเบอร์โทร
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-md-9 mb-3">
-        <label for="name">ชื่อผู้รับ</label>
-        <input type="text" class="form-control" id="name" placeholder="ชื่อผู้รับ" required>
-        <div class="invalid-feedback">
-          กรอกชื่อผู้รับ
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 mb-3">
-        <label for="plance">ที่อยู่</label>
-        <input type="text" class="form-control" id="plance" placeholder="Address" required>
-        <div class="invalid-feedback">
-          ที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">ถนน</label>
-        <input type="text" class="form-control" id="plance" placeholder="Raod" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">ซอย</label>
-        <input type="text" class="form-control" id="plance" placeholder="Alley" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 mb-3">
-        <label for="plance">ตำบล/แขวง</label>
-        <input type="text" class="form-control" id="plance" placeholder="Sub-district" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">อำเภอ</label>
-        <input type="text" class="form-control" id="plance" placeholder="District" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-      <div class="col-md-3 mb-3">
-        <label for="plance">จังหวัด</label>
-        <input type="text" class="form-control" id="plance" placeholder="Province" required>
-        <div class="invalid-feedback">
-          กรอกที่อยู่
-        </div>
-      </div>
-    </div>
-    <div class="row">
-    <div class="col-md-9">
-    <div class="input-group  mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-      </div>
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-  <hr class="mb-4">
-  <button class="btn btn-primary btn-lg btn-block" type="submit">บันทึกข้อมูล</button>
-  </form>
-
-
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; Traffic Ticket issude by Traffic Officers</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Officer</a></li>
-      <li class="list-inline-item"><a href="#">Competent</a></li>
-      <li class="list-inline-item"><a href="#">Traffic</a></li>
-    </ul>
-  </footer>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; Traffic Ticket issude by Traffic Officers</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Officer</a></li>
+        <li class="list-inline-item"><a href="#">Competent</a></li>
+        <li class="list-inline-item"><a href="#">Traffic</a></li>
+      </ul>
+    </footer>
   </div>
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
