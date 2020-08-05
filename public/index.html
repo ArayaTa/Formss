@@ -386,7 +386,7 @@
 
         <label>ผู้ออกใบสั่ง</label>
         <div class="row">
-          <div class="col-md-2 mb-3">
+          <div class="col-md-3 mb-3">
             <label for="police">ยศ</label>
             <select name="police" id="police" class="form-control">
               <option value="พลตำรวจเอก">พลตำรวจเอก</option>
@@ -723,21 +723,14 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-9">
-            <div class="input-group  mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-              </div>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile01"
-                  aria-describedby="inputGroupFileAddon01">
-                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <hr>
+         <h5> พยานหลักฐาน</h5>
+              <form action="/action_page.php">
+                <label for="img">เลือกรูป :</label>
+                <input type="file" id="img" name="img" accept="image/*">
+                <input type="submit">
+              </form>
+           
 
 
     </div>
